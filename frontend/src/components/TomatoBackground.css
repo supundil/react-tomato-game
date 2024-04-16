@@ -1,0 +1,80 @@
+/* TomatoBackground.css */
+@keyframes move-tomato-left-top {
+  0% {
+    transform: translateX(-100px) translateY(-100px);
+  }
+  50% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(150px) translateY(150px);
+  }
+}
+
+@keyframes move-tomato-right-top {
+  0% {
+    transform: translateX(100px) translateY(-100px);
+  }
+  50% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(-150px) translateY(150px);
+  }
+}
+
+@keyframes move-tomato-left-bottom {
+  0% {
+    transform: translateX(-100px) translateY(100px);
+  }
+  50% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(150px) translateY(-150px);
+  }
+}
+
+@keyframes move-tomato-right-bottom {
+  0% {
+    transform: translateX(100px) translateY(100px);
+  }
+  50% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(-150px) translateY(-150px);
+  }
+}
+
+@keyframes move-tomato-top {
+  0% {
+    transform: translateY(-100px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(150px);
+  }
+}
+
+@keyframes move-tomato-left {
+  0% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(150px);
+  }
+}
+.animate-tomatoes {
+  animation: move-tomato-left-top 4s ease-in-out infinite,
+    move-tomato-right-top 5s ease-in-out infinite,
+    move-tomato-left-bottom 4.5s ease-in-out infinite,
+    move-tomato-right-bottom 5.5s ease-in-out infinite,
+    move-tomato-top 6s ease-in-out infinite,
+    move-tomato-left 4s ease-in-out infinite;
+}
